@@ -2,48 +2,114 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const services = [
+	{
+		title: 'Uniformed Security',
+		body: 'Reliable on-site presence for commercial properties, events, residential communities, and high-visibility posts.',
+	},
+	{
+		title: 'Mobile Patrol',
+		body: 'Scheduled and responsive patrol support for properties that need coverage without a fixed post.',
+	},
+	{
+		title: 'Post Coverage',
+		body: 'Clear expectations, supervisor communication, and practical support for changing site needs.',
+	},
+];
+
+const process = [
+	'Review the site, schedule, risks, and coverage goals.',
+	'Match trained personnel to the post requirements.',
+	'Keep communication direct with supervisors and client contacts.',
+	'Document activity so leadership has a usable record.',
+];
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} image="/security-operations.svg" />
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<section class="hero">
+				<div class="hero-copy">
+					<p class="eyebrow">Michigan security services</p>
+					<h1>Steady coverage for the posts that need to run right.</h1>
+					<p class="intro">
+						Global Security Solutions Michigan supports businesses, properties, and community sites
+						with professional security staffing, patrol coverage, and supervisor-ready communication.
+					</p>
+					<div class="hero-actions">
+						<a class="button primary" href="/contact">Request coverage</a>
+						<a class="button secondary" href="/services">View services</a>
+					</div>
+				</div>
+				<img
+					class="hero-art"
+					src="/security-operations.svg"
+					alt="Security operations dashboard showing patrol, reporting, and site coverage"
+				/>
+			</section>
+
+			<section class="trust-band" aria-label="Core priorities">
+				<div>
+					<strong>Professional presence</strong>
+					<span>Visible, respectful, and prepared officers.</span>
+				</div>
+				<div>
+					<strong>Responsive coverage</strong>
+					<span>Support for planned posts and changing site needs.</span>
+				</div>
+				<div>
+					<strong>Clear records</strong>
+					<span>Communication that helps managers make decisions.</span>
+				</div>
+			</section>
+
+			<section class="section-grid">
+				<div>
+					<p class="eyebrow">What we cover</p>
+					<h2>Security services built around real site operations.</h2>
+				</div>
+				<div class="service-grid">
+					{services.map((service) => (
+						<article>
+							<h3>{service.title}</h3>
+							<p>{service.body}</p>
+						</article>
+					))}
+				</div>
+			</section>
+
+			<section class="split-section">
+				<div>
+					<p class="eyebrow">How GSS works</p>
+					<h2>Practical coverage, direct communication, useful documentation.</h2>
+					<p>
+						Every post is different. The goal is simple: understand what needs protecting, place
+						the right coverage, and keep the people responsible for the site informed.
+					</p>
+				</div>
+				<ol class="process-list">
+					{process.map((step) => <li>{step}</li>)}
+				</ol>
+			</section>
+
+			<section class="cta-section">
+				<div>
+					<p class="eyebrow">Start a conversation</p>
+					<h2>Need coverage for a Michigan site?</h2>
+					<p>
+						Send the post location, coverage window, and the kind of support you need. GSS can
+						follow up with the next practical step.
+					</p>
+				</div>
+				<a class="button primary" href="/contact">Contact GSS Michigan</a>
+			</section>
 		</main>
 		<Footer />
 	</body>

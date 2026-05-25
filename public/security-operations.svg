@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 680" role="img" aria-labelledby="title desc">
+	<title id="title">Security operations dashboard</title>
+	<desc id="desc">A stylized security operations scene with a Michigan map panel, patrol route, status cards, and incident report timeline.</desc>
+	<rect width="920" height="680" fill="#f5f7f8"/>
+	<rect x="48" y="48" width="824" height="584" rx="26" fill="#141923"/>
+	<rect x="86" y="92" width="748" height="72" rx="14" fill="#ffffff" opacity="0.08"/>
+	<circle cx="124" cy="128" r="18" fill="#0f6f5f"/>
+	<path d="M119 129l4 5 9-12" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+	<text x="158" y="123" fill="#fff" font-family="Arial, sans-serif" font-size="22" font-weight="700">GSS Michigan Operations</text>
+	<text x="158" y="149" fill="#9da8b6" font-family="Arial, sans-serif" font-size="15">Post coverage, patrol visibility, and clear records</text>
+	<rect x="104" y="204" width="340" height="342" rx="18" fill="#ffffff"/>
+	<text x="132" y="244" fill="#141923" font-family="Arial, sans-serif" font-size="20" font-weight="700">Site Coverage Map</text>
+	<path d="M268 292c35 10 58 34 58 70 0 43-36 75-80 75-49 0-88-37-88-82 0-55 56-93 110-63z" fill="#e8eeee"/>
+	<path d="M291 280c15 26 28 60 20 99-7 35-33 60-68 68" fill="none" stroke="#0f6f5f" stroke-width="8" stroke-linecap="round"/>
+	<path d="M170 359c55-36 98-14 137 15" fill="none" stroke="#c8942f" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 14"/>
+	<circle cx="181" cy="354" r="12" fill="#0f6f5f"/>
+	<circle cx="252" cy="339" r="12" fill="#c8942f"/>
+	<circle cx="318" cy="381" r="12" fill="#0f6f5f"/>
+	<rect x="132" y="482" width="252" height="24" rx="12" fill="#edf7f4"/>
+	<rect x="132" y="482" width="174" height="24" rx="12" fill="#0f6f5f"/>
+	<text x="132" y="526" fill="#5b6472" font-family="Arial, sans-serif" font-size="15">3 active posts monitored</text>
+	<rect x="484" y="204" width="166" height="138" rx="18" fill="#0f6f5f"/>
+	<text x="510" y="244" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="700">Patrol Status</text>
+	<text x="510" y="292" fill="#ffffff" font-family="Arial, sans-serif" font-size="48" font-weight="700">On</text>
+	<text x="510" y="318" fill="#d4eee9" font-family="Arial, sans-serif" font-size="15">Scheduled rounds</text>
+	<rect x="678" y="204" width="156" height="138" rx="18" fill="#ffffff" opacity="0.12"/>
+	<text x="704" y="244" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="700">Reports</text>
+	<text x="704" y="292" fill="#ffffff" font-family="Arial, sans-serif" font-size="48" font-weight="700">24</text>
+	<text x="704" y="318" fill="#9da8b6" font-family="Arial, sans-serif" font-size="15">Activity notes</text>
+	<rect x="484" y="382" width="350" height="164" rx="18" fill="#ffffff" opacity="0.1"/>
+	<text x="512" y="424" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="700">Supervisor Timeline</text>
+	<circle cx="522" cy="462" r="8" fill="#c8942f"/>
+	<rect x="544" y="452" width="218" height="10" rx="5" fill="#ffffff" opacity="0.7"/>
+	<rect x="544" y="472" width="138" height="10" rx="5" fill="#ffffff" opacity="0.24"/>
+	<circle cx="522" cy="514" r="8" fill="#0f6f5f"/>
+	<rect x="544" y="504" width="184" height="10" rx="5" fill="#ffffff" opacity="0.7"/>
+	<rect x="544" y="524" width="236" height="10" rx="5" fill="#ffffff" opacity="0.24"/>
+</svg>

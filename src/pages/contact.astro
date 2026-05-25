@@ -1,0 +1,50 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={`Contact | ${SITE_TITLE}`}
+			description="Contact Global Security Solutions Michigan about security staffing, post coverage, patrol support, or temporary site needs."
+			image="/security-operations.svg"
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="page-hero narrow">
+				<p class="eyebrow">Contact</p>
+				<h1>Request security coverage or start a site conversation.</h1>
+				<p>
+					Use the details below as placeholders for now. Add the best phone number, email, and service
+					area before publishing the site.
+				</p>
+			</section>
+
+			<section class="contact-layout">
+				<div class="contact-panel">
+					<h2>Coverage request details</h2>
+					<p>For faster follow-up, include:</p>
+					<ul>
+						<li>Site name and city</li>
+						<li>Coverage dates and hours</li>
+						<li>Number of officers needed</li>
+						<li>Post duties, access rules, or known concerns</li>
+					</ul>
+				</div>
+				<div class="contact-panel accent-panel">
+					<h2>GSS Michigan</h2>
+					<p><strong>Email:</strong> Add business email</p>
+					<p><strong>Phone:</strong> Add business phone</p>
+					<p><strong>Service area:</strong> Michigan</p>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

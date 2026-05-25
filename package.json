@@ -1,8 +1,8 @@
 {
 	"name": "gss-mi",
-	"description": "Build a personal website, blog, or portfolio with Astro.",
+	"description": "Website for Global Security Solutions Michigan.",
 	"cloudflare": {
-		"label": "Astro Framework Starter",
+		"label": "Global Security Solutions Michigan",
 		"products": [
 			"Workers"
 		],

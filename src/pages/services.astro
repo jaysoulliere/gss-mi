@@ -1,0 +1,76 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+
+const services = [
+	{
+		title: 'Commercial Site Security',
+		body: 'Uniformed presence for businesses, office properties, parking areas, and customer-facing sites.',
+	},
+	{
+		title: 'Residential Community Coverage',
+		body: 'Professional post coverage for apartments, communities, visitor control points, and shared facilities.',
+	},
+	{
+		title: 'Event and Temporary Posts',
+		body: 'Short-term security support for special events, temporary operations, and high-traffic periods.',
+	},
+	{
+		title: 'Mobile Patrol Support',
+		body: 'Scheduled patrol visits and visible deterrence for properties that do not require a fixed officer post.',
+	},
+	{
+		title: 'Incident Documentation',
+		body: 'Clear activity notes and incident reporting to support client records and supervisor follow-up.',
+	},
+	{
+		title: 'Post Order Coordination',
+		body: 'Practical alignment around duties, escalation contacts, access rules, and site-specific expectations.',
+	},
+];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={`Services | ${SITE_TITLE}`}
+			description="Security staffing, mobile patrol, incident documentation, and post coordination services for Michigan sites."
+			image="/security-operations.svg"
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="page-hero">
+				<p class="eyebrow">Services</p>
+				<h1>Coverage options for businesses, communities, events, and active posts.</h1>
+				<p>
+					GSS Michigan can support fixed posts, patrol needs, temporary coverage, and the daily
+					communication that keeps a security program working.
+				</p>
+			</section>
+
+			<section class="service-grid wide">
+				{services.map((service) => (
+					<article>
+						<h2>{service.title}</h2>
+						<p>{service.body}</p>
+					</article>
+				))}
+			</section>
+
+			<section class="cta-section">
+				<div>
+					<p class="eyebrow">Plan coverage</p>
+					<h2>Share your site details and coverage window.</h2>
+					<p>Include the address or area, hours, staffing need, and any post instructions already in place.</p>
+				</div>
+				<a class="button primary" href="/contact">Request a follow-up</a>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
