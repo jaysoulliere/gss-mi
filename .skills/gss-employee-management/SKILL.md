@@ -162,6 +162,76 @@ For onboarding documents, include relevant items such as:
 - Uniform and professionalism expectations
 - Armed or unarmed officer acknowledgments when applicable
 
+
+## New Hire Onboarding Automation Workflow
+
+When management asks to onboard a new hire, first prompt for all required fields (only ask missing items):
+
+- Employee full name
+- Phone number
+- Email address
+- Birthdate
+- Position assignment header (example: MI, Detroit Area)
+- Hourly rate (default to $16 unless management states otherwise)
+
+### Humanity Employee Creation Steps
+
+Use this exact process for Humanity account setup:
+
+1. Go to Humanity.
+2. Click **Staff**.
+3. Click **Add Employee**.
+4. Open the **Detailed Form**.
+5. Switch to **Detailed Mode**.
+6. Enter employee first name, last name, and email address.
+7. Create username in this exact format: `[firstnamelastname5]`.
+   - Example: John Smith -> `johnsmith5`
+8. Set hourly rate to **$16** unless management provides a different rate.
+9. Select the position assignment header (example: **MI, Detroit Area**) so all sites under that position are selected.
+10. Uncheck **Send Activation**.
+11. Click **Create Employee**.
+12. On the next page, choose to **manually activate** the employee.
+13. Go to password and set/save password in this exact format: `[Firstnamelastname5]`.
+   - Password mirrors username, but the first letter is capitalized.
+
+### Google Drive Work Order Database Step
+
+After Humanity setup, go to the Google Drive sheet **Work Order Data Base** and under the **Officers** sheet add the new hire information using the provided onboarding details.
+
+### Required Final Output for Onboarding
+
+After collecting the required information and generating credentials, output a ready-to-send welcome letter with populated username/password using this template:
+
+Welcome to Global Security Solutions,
+Your new-hire paperwork has been sent to you electronically through Adobe Sign for completion. Please complete all required documents using the Adobe Sign link you received.
+In addition, our onboarding site is available, offering access to the required forms as well as the employee handbook and a range of training materials.
+To familiarize yourself with our policies and procedures, please take a moment to review the training materials available at the following link:
+GSS MI Guard Guide
+If you have trouble accessing Adobe Sign or the onboarding site, please let us know.
+For the I-9, be sure to complete page 1 and the top portion of page 2. You will need to provide either one document from List A or one document each from Lists B and C. You will be prompted to upload images of these documents through the onboarding process.
+A voided check is not required for the direct deposit form, but please ensure your account and routing numbers are accurate and easy to read.
+Payroll Information
+Our pay cycle runs weekly, Monday through Sunday, with payday every Friday via direct deposit.
+Your first paycheck will cover your first two weeks of work.
+Paycheck stubs are sent by email and require the last four digits of your Social Security number to open.
+Employee Scheduling
+We use the TCP Humanity Employee Scheduling app.
+Your username is:
+[USERNAME]
+Your password is:
+[PASSWORD]
+Note:
+The first letter is capitalized in the password but lowercase in the username.
+Please sign in using the username above.
+Do not try to sign in using your email address.
+Please download the app so you can view and request available shifts.
+When requesting shifts, it is best to also follow up by text message with the office / Command Center number to make sure your request is approved.
+By signing in to the TCP Humanity app, you agree to read the GSS Employee Handbook. The handbook can be found under “Files” in the app menu.
+Jay D. Soulliere Jr.
+Global Security Solutions Inc.
+jay@globalsecuritysolutions.com
+Tel: 313-484-4845 | 866-GLO-SECU
+
 ## Policy and Post Order Lookup Rules
 
 When answering policy questions:
